@@ -26,6 +26,7 @@
 		74ACC59A29903E1200572B91 /* Pantry_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC59929903E1200572B91 /* Pantry_PortalTests.swift */; };
 		74ACC5A429903E1200572B91 /* Pantry_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC5A329903E1200572B91 /* Pantry_PortalUITests.swift */; };
 		74ACC5A629903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC5A529903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift */; };
+		D40187B22990A4F50054A079 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40187B12990A4F50054A079 /* ModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		74ACC59F29903E1200572B91 /* Pantry PortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pantry PortalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ACC5A329903E1200572B91 /* Pantry_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PortalUITests.swift; sourceTree = "<group>"; };
 		74ACC5A529903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PortalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D40187B029909DB60054A079 /* Pantry Portal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pantry Portal.entitlements"; sourceTree = "<group>"; };
+		D40187B12990A4F50054A079 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelView.swift; path = ../../../ModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		7489590D29904B9E001CA271 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D40187B12990A4F50054A079 /* ModelView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +158,7 @@
 		74ACC58729903E1100572B91 /* Pantry Portal */ = {
 			isa = PBXGroup;
 			children = (
+				D40187B029909DB60054A079 /* Pantry Portal.entitlements */,
 				74895925299056BA001CA271 /* ListHeaderView.swift */,
 				74ACC58A29903E1100572B91 /* ContentView.swift */,
 				7489591529904D1D001CA271 /* ContentHeaderView.swift */,
@@ -334,6 +339,7 @@
 				7489591A29904E75001CA271 /* MenuRowView.swift in Sources */,
 				74895920299052F5001CA271 /* WorldHistoryView.swift in Sources */,
 				7489592429905465001CA271 /* HistoryRowItem.swift in Sources */,
+				D40187B22990A4F50054A079 /* ModelView.swift in Sources */,
 				74895928299066DE001CA271 /* SelectedImageView.swift in Sources */,
 				7489591E29904F47001CA271 /* PageTitleView.swift in Sources */,
 				74895926299056BA001CA271 /* ListHeaderView.swift in Sources */,
@@ -494,9 +500,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Pantry Portal/Pantry Portal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pantry Portal/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GCG626TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -522,9 +530,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Pantry Portal/Pantry Portal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pantry Portal/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GCG626TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
