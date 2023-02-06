@@ -26,7 +26,9 @@
 		74ACC59A29903E1200572B91 /* Pantry_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC59929903E1200572B91 /* Pantry_PortalTests.swift */; };
 		74ACC5A429903E1200572B91 /* Pantry_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC5A329903E1200572B91 /* Pantry_PortalUITests.swift */; };
 		74ACC5A629903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACC5A529903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift */; };
-		D40187B22990A4F50054A079 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40187B12990A4F50054A079 /* ModelView.swift */; };
+		D40187BA2990A6D40054A079 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40187B92990A6D40054A079 /* Ingredient.swift */; };
+		D40187BC2990A8080054A079 /* AddRemoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40187BB2990A8080054A079 /* AddRemoveView.swift */; };
+		D40187BF2990AAD40054A079 /* IngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40187BE2990AAD40054A079 /* IngredientViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +72,9 @@
 		74ACC5A329903E1200572B91 /* Pantry_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PortalUITests.swift; sourceTree = "<group>"; };
 		74ACC5A529903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pantry_PortalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D40187B029909DB60054A079 /* Pantry Portal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pantry Portal.entitlements"; sourceTree = "<group>"; };
-		D40187B12990A4F50054A079 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelView.swift; path = ../../../ModelView.swift; sourceTree = "<group>"; };
+		D40187B92990A6D40054A079 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		D40187BB2990A8080054A079 /* AddRemoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveView.swift; sourceTree = "<group>"; };
+		D40187BE2990AAD40054A079 /* IngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,6 @@
 		7489590D29904B9E001CA271 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D40187B12990A4F50054A079 /* ModelView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +161,8 @@
 		74ACC58729903E1100572B91 /* Pantry Portal */ = {
 			isa = PBXGroup;
 			children = (
+				D40187BD2990AAA70054A079 /* ViewModels */,
+				D40187B62990A6400054A079 /* Models */,
 				D40187B029909DB60054A079 /* Pantry Portal.entitlements */,
 				74895925299056BA001CA271 /* ListHeaderView.swift */,
 				74ACC58A29903E1100572B91 /* ContentView.swift */,
@@ -198,6 +203,23 @@
 				74ACC5A529903E1200572B91 /* Pantry_PortalUITestsLaunchTests.swift */,
 			);
 			path = "Pantry PortalUITests";
+			sourceTree = "<group>";
+		};
+		D40187B62990A6400054A079 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D40187B92990A6D40054A079 /* Ingredient.swift */,
+				D40187BB2990A8080054A079 /* AddRemoveView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D40187BD2990AAA70054A079 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D40187BE2990AAD40054A079 /* IngredientViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,8 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40187BF2990AAD40054A079 /* IngredientViewModel.swift in Sources */,
+				D40187BC2990A8080054A079 /* AddRemoveView.swift in Sources */,
 				7489591829904E02001CA271 /* OrderRowView.swift in Sources */,
 				748959222990539D001CA271 /* HistoryRowView.swift in Sources */,
+				D40187BA2990A6D40054A079 /* Ingredient.swift in Sources */,
 				7489591629904D1D001CA271 /* ContentHeaderView.swift in Sources */,
 				74ACC58B29903E1100572B91 /* ContentView.swift in Sources */,
 				7489591429904CAD001CA271 /* MenuListView.swift in Sources */,
@@ -339,7 +364,6 @@
 				7489591A29904E75001CA271 /* MenuRowView.swift in Sources */,
 				74895920299052F5001CA271 /* WorldHistoryView.swift in Sources */,
 				7489592429905465001CA271 /* HistoryRowItem.swift in Sources */,
-				D40187B22990A4F50054A079 /* ModelView.swift in Sources */,
 				74895928299066DE001CA271 /* SelectedImageView.swift in Sources */,
 				7489591E29904F47001CA271 /* PageTitleView.swift in Sources */,
 				74895926299056BA001CA271 /* ListHeaderView.swift in Sources */,
