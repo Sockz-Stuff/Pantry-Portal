@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct AddRemoveView: View {
     
+   // @StateObject private var vm: IngredientViewModel
     @State private var nameOfIngredient: String = ""
     @State private var quantity: String = ""
     
+     // init(vm: IngredientViewModel){
+    //  _vm = StateObject(wrappedValue: vm)
+   // }
+   
     var body: some View {
         NavigationView{
         VStack {
@@ -21,7 +27,12 @@ struct AddRemoveView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button("Enter"){
-                guard let quantity = try? Int(quantity,format: .number) else { return }
+               // guard let quantity = try? Int(quantity,format: .number) else { return }
+                
+             //   vm.saveItem(nameOfIngredient: nameOfIngredient, quantity: quantity)
+               
+                self.nameOfIngredient = ""
+                self.quantity = ""
             }
             
             Spacer()
@@ -35,5 +46,6 @@ struct AddRemoveView: View {
 struct AddRemoveView_Previews: PreviewProvider {
     static var previews: some View {
         AddRemoveView()
+       // AddRemoveView(vm: IngredientViewModel(container: CKContainer.default()))
     }
 }

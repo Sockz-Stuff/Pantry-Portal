@@ -38,4 +38,5 @@ class IngredientViewModel : ObservableObject {
                 }
             }
         }
+    }
 }
