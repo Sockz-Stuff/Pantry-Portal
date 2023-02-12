@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7446A5DD2991E64900AC7466 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446A5DC2991E64900AC7466 /* MenuDetailView.swift */; };
-		7446A5E02991E94000AC7466 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446A5DE2991E94000AC7466 /* SceneDelegate.swift */; };
-		7446A5E12991E94000AC7466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446A5DF2991E94000AC7466 /* AppDelegate.swift */; };
-		746FB3FA2999936D00919C10 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB3F92999936D00919C10 /* HistoryDetailView.swift */; };
 		746FB3FC2999985600919C10 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB3FB2999985600919C10 /* RootTabView.swift */; };
 		746FB40829999FBA00919C10 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40529999FBA00919C10 /* HistoryModel.swift */; };
 		746FB40929999FBA00919C10 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40629999FBA00919C10 /* OrderModel.swift */; };
 		746FB40A29999FBA00919C10 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40729999FBA00919C10 /* MenuModel.swift */; };
+		746FB40C2999A0CA00919C10 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40B2999A0CA00919C10 /* HistoryDetailView.swift */; };
+		746FB40F2999A0F100919C10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40D2999A0F100919C10 /* SceneDelegate.swift */; };
+		746FB4102999A0F100919C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746FB40E2999A0F100919C10 /* AppDelegate.swift */; };
 		7489591229904C11001CA271 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489591129904C11001CA271 /* OrderListView.swift */; };
 		7489591429904CAD001CA271 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489591329904CAD001CA271 /* MenuListView.swift */; };
 		7489591629904D1D001CA271 /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489591529904D1D001CA271 /* ContentHeaderView.swift */; };
@@ -58,13 +58,13 @@
 
 /* Begin PBXFileReference section */
 		7446A5DC2991E64900AC7466 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuDetailView.swift; path = "../../../../../../../Downloads/Ex_Files_SwiftUI_EssT_Upd/Exercise Files/04/05/MenuDetailView.swift"; sourceTree = "<group>"; };
-		7446A5DE2991E94000AC7466 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../../../Downloads/Ex_Files_SwiftUI_EssT_Upd/Exercise Files/04/05/Begin/HuliPizza/HuliPizza/SceneDelegate.swift"; sourceTree = "<group>"; };
-		7446A5DF2991E94000AC7466 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../../../../Downloads/Ex_Files_SwiftUI_EssT_Upd/Exercise Files/04/05/Begin/HuliPizza/HuliPizza/AppDelegate.swift"; sourceTree = "<group>"; };
-		746FB3F92999936D00919C10 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDetailView.swift; path = "../../../../../../../Downloads/Ex_Files_SwiftUI_EssT_Upd/Exercise Files/04/10/HistoryDetailView.swift"; sourceTree = "<group>"; };
 		746FB3FB2999985600919C10 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = SOURCE_ROOT; };
 		746FB40529999FBA00919C10 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		746FB40629999FBA00919C10 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		746FB40729999FBA00919C10 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		746FB40B2999A0CA00919C10 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		746FB40D2999A0F100919C10 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		746FB40E2999A0F100919C10 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7489591129904C11001CA271 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		7489591329904CAD001CA271 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		7489591529904D1D001CA271 /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
@@ -151,9 +151,9 @@
 		7489591029904BD9001CA271 /* HistoryView */ = {
 			isa = PBXGroup;
 			children = (
+				746FB40B2999A0CA00919C10 /* HistoryDetailView.swift */,
 				7489591F299052F5001CA271 /* WorldHistoryView.swift */,
 				748959212990539D001CA271 /* HistoryRowView.swift */,
-				746FB3F92999936D00919C10 /* HistoryDetailView.swift */,
 				7489592329905465001CA271 /* HistoryRowItem.swift */,
 			);
 			path = HistoryView;
@@ -182,14 +182,14 @@
 		74ACC58729903E1100572B91 /* Pantry Portal */ = {
 			isa = PBXGroup;
 			children = (
+				746FB40E2999A0F100919C10 /* AppDelegate.swift */,
+				746FB40D2999A0F100919C10 /* SceneDelegate.swift */,
 				746FB3FB2999985600919C10 /* RootTabView.swift */,
 				D40187BD2990AAA70054A079 /* ViewModels */,
 				D40187B62990A6400054A079 /* Models */,
 				D40187B029909DB60054A079 /* Pantry Portal.entitlements */,
 				74895925299056BA001CA271 /* ListHeaderView.swift */,
 				74ACC58A29903E1100572B91 /* ContentView.swift */,
-				7446A5DF2991E94000AC7466 /* AppDelegate.swift */,
-				7446A5DE2991E94000AC7466 /* SceneDelegate.swift */,
 				7489591529904D1D001CA271 /* ContentHeaderView.swift */,
 				7489591D29904F47001CA271 /* PageTitleView.swift */,
 				74895927299066DE001CA271 /* SelectedImageView.swift */,
@@ -384,12 +384,12 @@
 				D40187BA2990A6D40054A079 /* Ingredient.swift in Sources */,
 				7489591629904D1D001CA271 /* ContentHeaderView.swift in Sources */,
 				746FB40A29999FBA00919C10 /* MenuModel.swift in Sources */,
-				7446A5E02991E94000AC7466 /* SceneDelegate.swift in Sources */,
 				74ACC58B29903E1100572B91 /* ContentView.swift in Sources */,
 				7489591429904CAD001CA271 /* MenuListView.swift in Sources */,
-				746FB3FA2999936D00919C10 /* HistoryDetailView.swift in Sources */,
 				746FB3FC2999985600919C10 /* RootTabView.swift in Sources */,
+				746FB40C2999A0CA00919C10 /* HistoryDetailView.swift in Sources */,
 				74ACC58929903E1100572B91 /* Pantry_PortalApp.swift in Sources */,
+				746FB4102999A0F100919C10 /* AppDelegate.swift in Sources */,
 				7489591A29904E75001CA271 /* MenuRowView.swift in Sources */,
 				746FB40829999FBA00919C10 /* HistoryModel.swift in Sources */,
 				74895920299052F5001CA271 /* WorldHistoryView.swift in Sources */,
@@ -400,7 +400,7 @@
 				74895926299056BA001CA271 /* ListHeaderView.swift in Sources */,
 				7489591229904C11001CA271 /* OrderListView.swift in Sources */,
 				7489591C29904EC3001CA271 /* RatingsView.swift in Sources */,
-				7446A5E12991E94000AC7466 /* AppDelegate.swift in Sources */,
+				746FB40F2999A0F100919C10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
