@@ -16,11 +16,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var orderModel: OrderModel
     @State var isMenuDisplayed:Bool = true
     var body: some View {
         VStack {
-            ContentHeaderView()
-                .layoutPriority(1)
+            //ContentHeaderView()
+            //    .layoutPriority(1)
             
             
             Button(action:{self.isMenuDisplayed.toggle()}){
@@ -29,10 +30,13 @@ struct ContentView: View {
                 //
             }
             
-            MenuListView()
+            //state for views
+            //observedobjecs for value changes like the models
+            
+            MenuListView(orderModel: orderModel)
                 .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
             
-            OrderListView()
+            OrderListView(orderModel: orderModel) //no $ means read only
                 .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
             
             //Spacer()
@@ -44,7 +48,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            ContentView()
+            ContentView(orderModel: OrderModel())
+            .environmentObject(UserPreferences())
             //hover over a attribute, OPT+click with mouse
             //hover over a stack, CMD click
         }

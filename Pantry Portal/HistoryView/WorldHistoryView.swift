@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct WorldHistoryView: View {
+    @State var imageID:Int = 0
     var body: some View {
-        VStack{
-            ContentHeaderView()
-            PageTitleView(title: "Pizza History")
-            SelectedImageView(image: "1_250w")
+        VStack {
+            //ContentHeaderView()
+            PageTitleView(title:"Pizza History")
+            SelectedImageView(image:"\(imageID)_250w")
                 .padding(5)
-            HistoryRowView()
-            Spacer()
+            HistoryRowView(imageID:$imageID)
         }
-        
     }
 }
 
 struct WorldHistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        WorldHistoryView()
+        Group {
+            WorldHistoryView()
+        }
     }
 }

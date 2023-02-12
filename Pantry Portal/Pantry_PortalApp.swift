@@ -4,7 +4,7 @@
 //
 //  Created by Marshall Jones on 2/5/23.
 //
-
+/*
 import SwiftUI
 
 @main
@@ -15,8 +15,12 @@ struct Pantry_PortalApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(orderModel: testOrderModel)
             //ContentView(vm: IngredientViewModel(container: containter))
         }
     }
 }
+
+ commented all this out as it was flagging an error that we dont know how to fix, no equivalent file in the tutorial to reference
+ 
+*/

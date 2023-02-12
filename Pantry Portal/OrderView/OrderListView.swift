@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct OrderListView: View {
+    var orderModel:OrderModel
     var body: some View {
         VStack {
-            ListHeaderView(text:"Your Order")
-            List(0..<5){item in //item in is the clusre, here thats the Hstack
-                OrderRowView()
+            ListHeaderView(orderModel: orderModel, text:"Your Order")
+            List(orderModel.orders){item in //item in is the clusre, here thats the Hstack
+                OrderRowView(orderItem:item)
             }
         }
     }
@@ -20,7 +21,7 @@ struct OrderListView: View {
 
 struct OrderListView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderListView()
+        OrderListView(orderModel: OrderModel())
     }
 }
 
