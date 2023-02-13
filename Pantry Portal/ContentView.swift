@@ -35,9 +35,11 @@ struct ContentView: View {
             
             MenuListView(orderModel: orderModel)
                 .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
+                //.environmentObject(UserPreferences())
             
             OrderListView(orderModel: orderModel) //no $ means read only
                 .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
+                //.environmentObject(UserPreferences())
             
             //Spacer()
         }

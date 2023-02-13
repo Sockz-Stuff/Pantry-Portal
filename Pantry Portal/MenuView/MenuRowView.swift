@@ -33,6 +33,7 @@ struct MenuRowView: View {
 struct MenuRowView_Previews: PreviewProvider {
     static var previews: some View {
         MenuRowView(menuItem:MenuModel().menu[7])
+            
         }
 }
 

@@ -27,5 +27,6 @@ struct RatingsView: View {
 struct RatingsView_Previews: PreviewProvider {
     static var previews: some View {
         RatingsView(count:5)
+            
     }
 }

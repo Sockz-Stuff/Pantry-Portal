@@ -135,5 +135,6 @@ let testOrderItem = OrderItem(id: 1, menuID: 1, name: "Huli Chicken", comments: 
 class UserPreferences:ObservableObject{
 
     @Published var size:Size = .medium
+    
 }
 

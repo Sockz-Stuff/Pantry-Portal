@@ -26,6 +26,7 @@ struct RootTabView: View {
         }
         .accentColor(Color("B1"))
     }
+
 }
 
 struct RootTabView_Previews: PreviewProvider {

@@ -4,7 +4,7 @@
 //
 //  Created by Marshall Jones on 2/5/23.
 //
-/*
+
 import SwiftUI
 
 @main
@@ -21,6 +21,6 @@ struct Pantry_PortalApp: App {
     }
 }
 
- commented all this out as it was flagging an error that we dont know how to fix, no equivalent file in the tutorial to reference
+ //commented all this out as it was flagging an error that we dont know how to fix, no equivalent file in the tutorial to reference
  
-*/
+

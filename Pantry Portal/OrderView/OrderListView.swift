@@ -12,10 +12,21 @@ struct OrderListView: View {
     var body: some View {
         VStack {
             ListHeaderView(orderModel: orderModel, text:"Your Order")
-            List(orderModel.orders){item in //item in is the clusre, here thats the Hstack
-                OrderRowView(orderItem:item)
+            List{ //item in is the clusre, here thats the Hstack
+                Section(
+                    header:ListHeaderView(orderModel: self.orderModel, text:"Your Order")
+                
+                ){
+                    ForEach(orderModel.orders){item in
+                        OrderRowView(orderItem:item)
+                    }
+                    .onDelete(perform:delete)
+                }
             }
         }
+    }
+    func delete(at offsets:IndexSet){
+        orderModel.orders.remove(atOffsets:offsets)
     }
 }
 
